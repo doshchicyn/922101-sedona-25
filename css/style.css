@@ -169,7 +169,7 @@ a {
 .advantage-list__item--grey-block {
     width: 400px;
     background-color: #eeeeee;
-    padding: 46px 69px;
+    padding: 46px 48px;
 }
 
 .advantage-list__item:first-child {
@@ -178,7 +178,6 @@ a {
 
 .advantage-list__item:last-child {
     order: -1;
-    background-color: red;
     min-height: 330px;
 }
 
@@ -191,10 +190,18 @@ a {
 
 .option-list__item {
     width: 400px;
+    padding: 161px 57px 56px 57px;
 }
 
-.wrapper {
+.option-list__item > .wrapper {
+    width: 286px;
+}
+
+
+.advantage-list__item--row > .wrapper {
     display: flex;
+    flex-direction: row;
+    background-color: #81b3d2;
 }
 
 .advantage-list__item--row:nth-child(2) .wrapper {
@@ -208,22 +215,27 @@ a {
     color: #fff;
 }
 
-.advantage-list__image-town {
+.advantage-list__image {
     width: 800px;
-    height: 100%;
+    height: auto;
     background-color: #81b3d2;
 }
 
-.advantages-list__title {
-    padding: 0;
+.advantages-list__title,
+.option-list__title {
+    position: relative;
+    padding: 0 72px;
     margin: 0;
     font-size: 21px;
     line-height: 23px;
+    font-weight: 700;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
-.advantages-list__number, .advantages-list__text {
+.advantages-list__number, 
+.advantages-list__text,
+.option-list__text {
     padding: 0;
     margin: 0;
     font-size: 14px;
@@ -232,14 +244,25 @@ a {
 }
 
 .advantages-list__number {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
-.advantage-list__item--grey-block .advantages-list__title {
+.advantage-list__item--grey-block .advantages-list__title,
+.option-list__item .option-list__title {
     color: #000;
 }
 
 .advantage-list__item--grey-block .advantages-list__number,
-.advantage-list__item--grey-block .advantages-list__text {
+.advantage-list__item--grey-block .advantages-list__text,
+.option-list__item .option-list__text {
     color: #333;
+}
+
+.option-list__title::before {
+    content: "";
+    position: absolute;
+    bottom: 29px;
+    width: 74px;
+    height: 70px;
+    background-color: red;
 }
