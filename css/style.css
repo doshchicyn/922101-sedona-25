@@ -22,6 +22,7 @@ html {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -41,6 +42,7 @@ a {
 
 .container {
     width: 1200px;
+    position: relative;
     margin: 0 auto;
     padding: 0;
     background-color: #ffffff;
@@ -320,6 +322,7 @@ a {
 
 .search-form__field {
     display: flex;
+    position: relative;
     justify-content: space-between;
     width: 100%;
     margin: 0;
@@ -345,6 +348,10 @@ a {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
+}
+
+.search-form__field .search-form__input {
+    padding-right: 39px;
 }
 
 .search-form__button {
@@ -382,4 +389,55 @@ a {
 
 .wrapper-column {
     margin-bottom: 54px;
+}
+
+.calendar-btn {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 21px;
+    height: 22px;
+    right: 9px;
+    top: 9px;
+    background-color: transparent;
+    border: none;
+}
+
+.calendar-icon path {
+    fill: #cacaca;
+}
+
+.calendar-btn:hover > .calendar-icon path,
+.calendar-btn:focus > .calendar-icon path {
+    fill: #000;
+}
+
+.calendar-btn:active > .calendar-icon path {
+    fill: #81b3d2;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__hashtag {
+    padding: 0;
+    margin: 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    
+}
+
+.footer__soc-list {
+    display: flex;
+    flex-wrap: wrap;
+
 }
