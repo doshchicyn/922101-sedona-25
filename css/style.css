@@ -188,6 +188,7 @@ a {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .option-list__item {
@@ -263,10 +264,29 @@ a {
 .option-list__title::before {
     content: "";
     position: absolute;
-    bottom: 29px;
-    width: 74px;
-    height: 70px;
-    background-color: red;
+    width: 76px;
+    height: 76px;
+    left: 50%;
+    bottom: 55px;
+    margin-left: -38px;
+}
+
+.option-list__title.housing::before {
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.option-list__title.food::before {
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.option-list__title.souvenirs::before {
+    background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .search-hotel {
@@ -419,25 +439,88 @@ a {
 .footer-content {
     position: absolute;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 36px 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .footer__hashtag {
     padding: 0;
     margin: 0;
+    width: 200px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: #000000;
-    
+    text-align: center;
 }
 
 .footer__soc-list {
+    padding: 0 25px;
+    margin: 0;
+    width: 200px;
     display: flex;
     flex-wrap: wrap;
-
+    list-style: none;
 }
+
+.soc-list__item {
+    margin-right: 6px;
+    margin-bottom: 6px;
+    background-color: #81b3d2;
+}
+
+.soc-list__item:nth-child(3n) {
+    margin-right: 0; */
+}
+
+.soc-list__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    transition: 0.3s;
+}
+
+.soc-list__button:hover,
+.soc-list__button:focus {
+    background-color: #669ec0;
+}
+
+.soc-list__button:active {
+    background-color: #5496bd;
+}
+
+.soc-list__button:active > svg path {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.footer__copyrights {
+    padding: 0;
+    margin: 0;
+    padding-left: 3px;
+    width: 200px;
+}
+
+.copyrights__link {
+    display: inline-block;
+    vertical-align: middle;
+    width: 115px;
+    height: 41px;
+    padding-left: 4px;
+}
+
+.copyrights__link:hover > .copyrights__logo path,
+.copyrights__link:focus > .copyrights__logo path {
+    fill: #81b3d2; 
+}
+
+.copyrights__link:active > .copyrights__logo path {
+    fill: #bdbbbc; 
+}
+
