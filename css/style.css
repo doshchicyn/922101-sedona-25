@@ -49,7 +49,7 @@ a {
     box-shadow: 0 0 10px 0 rgba(220, 220, 220, 0.9);
 }
 
-.header-content{
+.header-content {
     margin-bottom: 60px;
 }
 
@@ -524,3 +524,107 @@ a {
     fill: #bdbbbc; 
 }
 
+/*  hotels page styles  */
+
+.main-inner-content {
+    
+}
+
+.filters {
+    background-color: #6A90B6;
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 26px 72px;
+}
+
+.filters__form {
+    display: flex;
+}
+
+.filters__form fieldset {
+    border: none;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.filters__form legend {
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.filters__form .infrastructure-filter {
+    width: 140px;    
+    padding: 0;
+    margin: 0;
+    margin-right: 115px;
+}
+
+.filters__form .cost-filter {
+    margin-left: auto;
+}
+
+.filters__form .filter-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.filter-list li {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 40px;
+    margin-bottom: 24px;
+}
+
+.filter-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+.filter-list__item label {
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.filter-list__item label::before {
+    content: "";
+    position: absolute;
+    left: -39px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.filter-list__item .input-checkbox[type="checkbox"]:checked + .checkbox-indicator::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -30px;
+    width: 19px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+            transform: rotate(135deg);
+}
+
+.filter-list__item .input-checkbox[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -34px;
+    width: 11px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+            transform: rotate(45deg);
+}
