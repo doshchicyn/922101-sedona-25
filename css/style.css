@@ -613,8 +613,9 @@ a {
     width: 19px;
     height: 4px;
     background-color: rgba(255, 255, 255, 1);
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 3px 2px rgba(76, 120, 155, 1);
             transform: rotate(135deg);
+            outline: 1px solid rgba(76, 120, 155, 1);
 }
 
 .filter-list__item .input-checkbox[type="checkbox"]:checked + .checkbox-indicator::after {
@@ -625,6 +626,42 @@ a {
     width: 11px;
     height: 4px;
     background-color: rgba(255, 255, 255, 1);
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0);
             transform: rotate(45deg);
 }
+
+.sorting {
+    padding: 28px 72px;
+
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.sorting-container {
+    display: flex;
+}
+
+.sorting__index-field {
+    padding: 0;
+    margin: 0;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    width: 120px;
+    margin-right: 50px;
+}
+
+.sorting-options-wrap {
+    min-width: 355px;
+    display: flex;
+}
+
+.sorting__options-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
