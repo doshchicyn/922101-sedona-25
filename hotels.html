@@ -102,25 +102,33 @@
 					<div class="sorting-container">
 						<p class="sorting__index-field">Найдено: <span class="index-field__value">3</span></p>
 						<div class="sorting-options-wrap">
-							<p class="sorting__title">Сортировка:</p>
+							<span class="sorting__title">Сортировка:</span>
 							<ul class="sorting__options-list">
-								<li class="option-list__item">
+								<li class="sorting__item">
 									<a class="option-list__link option-list__link--current">По цене</a> 
 								</li>  
-								<li class="option-list__item">
+								<li class="sorting__item">
 									<a class="option-list__link" href="#">По типу</a> 
 								</li>  
-								<li class="option-list__item">
+								<li class="sorting__item">
 									<a class="option-list__link" href="#">По рейтингу</a> 
-								</li>  
+								</li>
 							</ul>
 						</div>
 						<ul class="sorting__direction">
-							<li>
-								<a class="direction__item" aria-label="По возрастанию" title="По возрастанию" href="#"></a>
+							<li class="direction__item">
+								<a class="direction__item-link" aria-label="По возрастанию" title="По возрастанию" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+									</svg>
+								</a>
 							</li>
 							<li class="direction__item">
-								<a class="direction__item direction__item--current" aria-label="По убыванию" title="По убыванию"></a>
+								<a class="direction__item-link direction__item-link--current" aria-label="По убыванию" title="По убыванию">
+									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#cacaca" d="M5.5 10L0 0h11"/>
+									</svg>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -128,6 +136,36 @@
 				<section class="catalog">
 					<h3 class="visually-hidden">Каталог</h3>
 					<ul class="catalog-list">
+						<li class="catalog-list__item">
+							<div class="item-wrap">
+								<img class="item__picture" src="img/hotel-amara.jpg" alt="Изображение Amara Resort & Spa" width="135" height="90">
+								<div class="hotel-desc-wrap">
+									<div class="row">
+										<h3 class="hotel-desc__title">Amara Resort & Spa</h3>
+										<ul class="hotel-rating__stars" >
+											<li class="star-item"><span class="star"></span></li>
+											<li class="star-item"><span class="star"></span></li>
+											<li class="star-item"><span class="star"></span></li>
+											<li class="star-item"><span class="star"></span></li>
+										</ul>
+									</div>
+									<div class="row">
+										<p class="hotel-desc__type">Гостиница</p>
+										<p class="hotel-desc__price">От 4000 р.</p>
+									</div>
+									<div class="row">
+										<p class="hotel-desc__links">
+											<a class="hotel-desc__btn hotel-desc__btn-info" href="#">Подробнее</a>
+											<a class="hotel-desc__btn hotel-desc__btn-reserve" href="#">Забронировать</a>
+											<p class="hotel-rating__mark">Рейтинг: 8,5</p>
+										</p>
+									</div>
+								</div>
+								<div class="hotel-rating">
+									
+								</div>
+							</div>
+						</li>
 						<li class="catalog-list__item">
 							<div class="item-wrap">
 								<img class="item__picture" src="img/hotel-amara.jpg" alt="Изображение Amara Resort & Spa" width="135" height="90">
@@ -197,7 +235,7 @@
 					</ul>
 				</section>
 			</main>
-			<footer class="footer-content">
+			<footer class="footer-content footer-content--inner">
 				<p class="footer__hashtag">#visitsedona</p>
 				<ul class="footer__soc-list">
 					<li class="soc-list__item">
