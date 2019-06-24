@@ -81,22 +81,22 @@
 						<li class="advantage-list__item advantage-list__item--row">
 							<ul class="option-list">
 								<li class="option-list__item">
-                  					<div class="wrapper">
+														<div class="wrapper">
 										<p class="option-list__title housing">Жилье</p>
 										<p class="option-list__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                  					</div>
+														</div>
 								</li>
 								<li class="option-list__item">
 									<div class="wrapper">
 										<p class="option-list__title food">Еда</p>
 										<p class="option-list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                  					</div>
+														</div>
 								</li>
 								<li class="option-list__item">
 									<div class="wrapper">
 										<p class="option-list__title souvenirs">Сувениры</p>
 										<p class="option-list__text">Не только китайского, но и местного производства!</p>
-                  					</div>
+														</div>
 								</li>
 							</ul>
 						</li>
@@ -111,7 +111,7 @@
 					</div>
 					<div class="search-modal search-modal--hidden">
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-							<p class="search-form__field">
+							<div class="search-form__row">
 								<label for="entry_date" class="search-form__label">Дата заезда:</label>
 								<input id="entry_date" class="search-form__input" type="text" name="entry_date" value="24 АПРЕЛЯ 2017">
 								<button class="calendar-btn" type="button">
@@ -120,8 +120,8 @@
 										<path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
 									</svg>
 								</button>
-							</p>
-							<p class="search-form__field">
+							</div>
+							<div class="search-form__row">
 								<label for="departure_date" class="search-form__label">Дата выезда:</label>
 								<input id="departure_date" class="search-form__input" type="text" name="departure_date" value="4 ИЮЛЯ 2017">
 								<button class="calendar-btn" type="button">
@@ -130,18 +130,24 @@
 										<path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
 									</svg>
 								</button>
-							</p>
-							<div class= "wrapper-column">
-								<p class="search-form__field">
-									<label for="adults">Взрослые:</label>
-									<button class="search-form__button" type="button"></button>
-									<input id="adults" type="text" name="adults" value="2">
-									<button class="search-form__button" type="button"></button>
-									<label for="childs">Дети:</label>
-									<button class="search-form__button" type="button"></button>
-									<input id="childs" type="text" name="childs" value="0">
-									<button class="search-form__button" type="button"></button>
-								</p>
+							</div>
+							<div class= "search-form__row search-form__columns">
+								<div class="column-item">
+									<label class="search-form__label" for="adults">Взрослые:</label>
+									<div class="quantity quantity_adults">
+										<button class="quantity__button quantity__button--minus" type="button" aria-label="Кнопка меньше"></button>
+										<input class="quantity__input" id="adults" type="text" name="adults" value="2" maxlength="2">
+										<button class="quantity__button quantity__button--plus" type="button" aria-label="Кнопка больше"></button>
+									</div>
+								</div>
+								<div class="column-item">
+									<label class="search-form__label" for="childs">Дети:</label>
+									<div class="quantity quantity_childs">
+										<button class="quantity__button quantity__button--minus" type="button" aria-label="Кнопка меньше"></button>
+										<input class="quantity__input" id="childs" type="text" name="childs" value="0" maxlength="2">
+										<button class="quantity__button quantity__button--plus" type="button" aria-label="Кнопка больше"></button>
+									</div>
+								</div>
 							</div>
 							<button class="search-form__search-button" type="submit">Найти</button>
 						</form>
@@ -186,6 +192,6 @@
 				</p>
 			</footer>
 		</div>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</body>
 </html>
